@@ -1,0 +1,18 @@
+/* initially, the text is fully hidden */
+.toggle-text {
+  .toggle-text__content {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    .toggle-text__break-point {
+      display: block;
+      height: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .toggle-text__btn {
+    cursor: pointer;
+    user-select: none;
+  }
+}
