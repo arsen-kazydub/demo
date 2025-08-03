@@ -1,0 +1,33 @@
+:root {
+  --header-full-height: 150px;
+  --header-compact-height: 100px;
+}
+
+body {
+  display: block;
+  padding-top: var(--header-full-height);
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-full-height);
+  transition: height 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  background: rgba(1,47,95,0.95);
+  backdrop-filter: blur(4px);
+  box-shadow: rgba(0,0,0,0.45) 0 25px 20px -20px;
+  &.header-compact {
+    height: var(--header-compact-height);
+  }
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
