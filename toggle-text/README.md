@@ -49,9 +49,9 @@ offering configurable break points and smooth height transitions.
 | Option               | Type     | Default                      | Description                                                              |
 |----------------------|----------|------------------------------|--------------------------------------------------------------------------|
 | `breakPointSelector` | `string` | `'p:nth-child(2)'`           | CSS selector for the element before which a break point will be inserted |
+| `contentClass`       | `string` | `'toggle-text__content'`     | CSS class for the content container                                      |
+| `breakPointClass`    | `string` | `'toggle-text__break-point'` | CSS class for the inserted break point element                           |
+| `btnClass`           | `string` | `'toggle-text__btn'`         | CSS class for the toggle button                                          |
 | `btnTextExpand`      | `string` | `'Read More'`                | Button text when content is collapsed                                    |
 | `btnTextCollapse`    | `string` | `'Read Less'`                | Button text when content is expanded                                     |
 | `transitionDuration` | `number` | `400`                        | Duration of the height transition in milliseconds                        |
-| `cssContent`         | `string` | `'toggle-text__content'`     | CSS class for the content container                                      |
-| `cssBreakPoint`      | `string` | `'toggle-text__break-point'` | CSS class for the inserted break point element                           |
-| `cssBtn`             | `string` | `'toggle-text__btn'`         | CSS class for the toggle button                                          |
