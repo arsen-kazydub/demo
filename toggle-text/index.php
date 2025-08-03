@@ -60,7 +60,7 @@ require_once __DIR__ . '/../_shared/header.php';
       new ToggleText(section, {
         // merge the translations and other options into one object
         ...btnTextTranslations,
-        breakPointSelector: 'p:nth-child(2)',
+        // other options
       });
     });
   });
