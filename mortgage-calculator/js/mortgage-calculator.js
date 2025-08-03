@@ -24,23 +24,28 @@ class MortgageCalculator {
     this.root = root;
 
     this.options = {
-      // the initial values
+      // initial values
       price: 1000000,
       downPayment: 20,
       loanPeriod: 25,
       interestRate: 4,
-      // the price range
+
+      // price range
       minPrice: 10000,
       maxPrice: 2000000,
-      // the down payment range (percents)
+
+      // down payment range (percents)
       minDownPayment: 10,
       maxDownPayment: 80,
-      // the loan period range (years)
+
+      // loan period range (years)
       minLoanPeriod: 1,
       maxLoanPeriod: 30,
-      // the interest rate range (percents)
+
+      // interest rate range (percents)
       minInterestRate: 1,
       maxInterestRate: 10,
+
       ...options
     };
 
