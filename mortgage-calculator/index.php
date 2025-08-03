@@ -2,6 +2,7 @@
 
 $page = [
   'title' => 'Mortgage Calculator',
+  'body_class' => 'centered-content',
   'styles' => ['css/mortgage-calculator.css'],
   'scripts' => ['js/mortgage-calculator.js'],
 ];

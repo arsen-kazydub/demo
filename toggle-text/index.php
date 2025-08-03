@@ -2,6 +2,7 @@
 
 $page = [
   'title' => 'Toggle Text',
+  'body_class' => 'centered-content',
   'styles' => ['css/toggle-text.css'],
   'scripts' => ['js/toggle-text.js'],
 ];
