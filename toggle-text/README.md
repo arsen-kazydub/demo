@@ -31,7 +31,7 @@ offering configurable break points and smooth height transitions.
 
 ## How to use
 1. Prepare your HTML markup as in the example below.
-2. Include `toggle-text.css` and `toggle-text.js`.
+2. Include `toggle-text.css` and `toggle-text.js` in your page.
 3. Initialize the plugin with your options.
 
 **Example:**
