@@ -21,7 +21,6 @@ and restores it when scrolled back to the top.
 * JavaScript (ES6+)
 * HTML5
 * CSS3
-* Bootstrap 5
 
 
 ## How to use
