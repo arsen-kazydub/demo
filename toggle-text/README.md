@@ -26,7 +26,6 @@ offering configurable break points and smooth height transitions.
 * JavaScript (ES6+)
 * HTML5
 * CSS3
-* Bootstrap 5
 
 
 ## How to use
