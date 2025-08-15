@@ -1,0 +1,22 @@
+.fts-demo {
+  --selectbox-spacing: calc(0.75rem + 1px);
+
+  padding: 2.2rem;
+
+  .form {
+    width: 100%;
+    label {
+      padding: 0 var(--selectbox-spacing);
+    }
+  }
+
+  .poem {
+    padding: 0 var(--selectbox-spacing);
+    p {
+      white-space: pre-line;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
