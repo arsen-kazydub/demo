@@ -1,10 +1,10 @@
 <?php
 
 $page = [
-  'title' => 'Toggle Text',
+  'title'      => 'Toggle Text',
   'body_class' => 'centered-content',
-  'styles' => ['css/toggle-text.css'],
-  'scripts' => ['js/toggle-text.js'],
+  'styles'     => ['css/toggle-text.css'],
+  'scripts'    => ['js/toggle-text.js', 'js/demo.js'],
 ];
 
 require_once __DIR__ . '/../_shared/header.php';
@@ -38,32 +38,5 @@ require_once __DIR__ . '/../_shared/header.php';
     <button type="button" class="btn btn-primary toggle-text__btn">Read More</button>
   </div><!-- / .toggle-text -->
 </main>
-
-
-<script>
-  // Initialization
-  document.addEventListener('DOMContentLoaded', () => {
-    const toggleTextSections = document.querySelectorAll('.toggle-text');
-    if (!toggleTextSections.length) return;
-
-    // Example of dynamic French translation
-    // (we still need to update the initial state of the button in HTML)
-    const isFrench = location.pathname.includes('/fr/');
-    const btnTextTranslations = isFrench
-      ? {
-        btnTextExpand: 'Lire plus',
-        btnTextCollapse: 'Lire moins',
-      }
-      : {};
-
-    toggleTextSections.forEach(section => {
-      new ToggleText(section, {
-        // merge the translations and other options into one object
-        ...btnTextTranslations,
-        // other options
-      });
-    });
-  });
-</script>
 
 <?php require_once __DIR__ . '/../_shared/footer.php';
