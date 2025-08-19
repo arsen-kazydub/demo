@@ -1,15 +1,15 @@
 /**
  * @typedef {Object} MortgageCalculatorOptions
- * @property {number} price - Initial property price (USD)
- * @property {number} downPayment - Initial down payment (%)
- * @property {number} loanPeriod - Initial loan period (years)
- * @property {number} interestRate - Initial interest rate (%)
- * @property {number} minPrice - Minimum allowed price (USD)
- * @property {number} maxPrice - Maximum allowed price (USD)
- * @property {number} minDownPayment - Minimum allowed down payment (%)
- * @property {number} maxDownPayment - Maximum allowed down payment (%)
- * @property {number} minLoanPeriod - Minimum loan period (years)
- * @property {number} maxLoanPeriod - Maximum loan period (years)
+ * @property {number} price           - Initial property price (USD)
+ * @property {number} downPayment     - Initial down payment (%)
+ * @property {number} loanPeriod      - Initial loan period (years)
+ * @property {number} interestRate    - Initial interest rate (%)
+ * @property {number} minPrice        - Minimum allowed price (USD)
+ * @property {number} maxPrice        - Maximum allowed price (USD)
+ * @property {number} minDownPayment  - Minimum allowed down payment (%)
+ * @property {number} maxDownPayment  - Maximum allowed down payment (%)
+ * @property {number} minLoanPeriod   - Minimum loan period (years)
+ * @property {number} maxLoanPeriod   - Maximum loan period (years)
  * @property {number} minInterestRate - Minimum interest rate (%)
  * @property {number} maxInterestRate - Maximum interest rate (%)
  */
@@ -25,45 +25,45 @@ class MortgageCalculator {
 
     this.options = {
       // initial values
-      price: 1000000,
-      downPayment: 20,
-      loanPeriod: 25,
-      interestRate: 4,
+      price           : 1000000,
+      downPayment     : 20,
+      loanPeriod      : 25,
+      interestRate    : 4,
 
       // price range
-      minPrice: 10000,
-      maxPrice: 2000000,
+      minPrice        : 10000,
+      maxPrice        : 2000000,
 
       // down payment range (percents)
-      minDownPayment: 10,
-      maxDownPayment: 80,
+      minDownPayment  : 10,
+      maxDownPayment  : 80,
 
       // loan period range (years)
-      minLoanPeriod: 1,
-      maxLoanPeriod: 30,
+      minLoanPeriod   : 1,
+      maxLoanPeriod   : 30,
 
       // interest rate range (percents)
-      minInterestRate: 1,
-      maxInterestRate: 10,
+      minInterestRate : 1,
+      maxInterestRate : 10,
 
       ...options
     };
 
-    this.priceInput = this.root.querySelector('#mc-price-input');
-    this.priceSlider = this.root.querySelector('#mc-price-slider');
+    this.priceInput          = this.root.querySelector('#mc-price-input');
+    this.priceSlider         = this.root.querySelector('#mc-price-slider');
 
-    this.downPaymentInput = this.root.querySelector('#mc-down-payment-input');
-    this.downPaymentSlider = this.root.querySelector('#mc-down-payment-slider');
+    this.downPaymentInput    = this.root.querySelector('#mc-down-payment-input');
+    this.downPaymentSlider   = this.root.querySelector('#mc-down-payment-slider');
     this.downPaymentPercents = this.root.querySelector('#mc-down-payment-addon');
 
-    this.loanPeriodInput = this.root.querySelector('#mc-loan-period-input');
-    this.loanPeriodSlider = this.root.querySelector('#mc-loan-period-slider');
+    this.loanPeriodInput     = this.root.querySelector('#mc-loan-period-input');
+    this.loanPeriodSlider    = this.root.querySelector('#mc-loan-period-slider');
 
-    this.interestRateInput = this.root.querySelector('#mc-interest-rate-input');
-    this.interestRateSlider = this.root.querySelector('#mc-interest-rate-slider');
+    this.interestRateInput   = this.root.querySelector('#mc-interest-rate-input');
+    this.interestRateSlider  = this.root.querySelector('#mc-interest-rate-slider');
 
-    this.elMonthlyPayment = this.root.querySelector('#mc-monthly-payment');
-    this.elTotalPayment = this.root.querySelector('#mc-total-payment');
+    this.elMonthlyPayment    = this.root.querySelector('#mc-monthly-payment');
+    this.elTotalPayment      = this.root.querySelector('#mc-total-payment');
 
     // abort if any required element is missing
     const requiredElements = [
@@ -86,8 +86,19 @@ class MortgageCalculator {
     }
 
     // group inputs and sliders for easier event handling
-    this.inputs = [this.priceInput, this.downPaymentInput, this.loanPeriodInput, this.interestRateInput];
-    this.sliders = [this.priceSlider, this.downPaymentSlider, this.loanPeriodSlider, this.interestRateSlider];
+    this.inputs = [
+      this.priceInput,
+      this.downPaymentInput,
+      this.loanPeriodInput,
+      this.interestRateInput
+    ];
+
+    this.sliders = [
+      this.priceSlider,
+      this.downPaymentSlider,
+      this.loanPeriodSlider,
+      this.interestRateSlider
+    ];
 
     this.init();
   }
@@ -277,15 +288,15 @@ class MortgageCalculator {
   // Updates UI with mortgage calculations
   displayResult() {
     // get values as integers
-    const price = this.getInputValue(this.priceInput);
-    const downPayment = this.getInputValue(this.downPaymentInput);
-    const loanPeriod = this.getInputValue(this.loanPeriodInput);
+    const price        = this.getInputValue(this.priceInput);
+    const downPayment  = this.getInputValue(this.downPaymentInput);
+    const loanPeriod   = this.getInputValue(this.loanPeriodInput);
     const interestRate = this.getInputValue(this.interestRateInput);
 
     // update monthly and total payments
     const monthlyPayment = this.calcMonthlyPayment(price, downPayment, loanPeriod, interestRate);
-    const totalPayment = this.calcTotalPayment(monthlyPayment, loanPeriod);
+    const totalPayment   = this.calcTotalPayment(monthlyPayment, loanPeriod);
     this.elMonthlyPayment.textContent = this.formatMonetaryValue(monthlyPayment);
-    this.elTotalPayment.textContent = this.formatMonetaryValue(totalPayment);
+    this.elTotalPayment.textContent   = this.formatMonetaryValue(totalPayment);
   }
 }
