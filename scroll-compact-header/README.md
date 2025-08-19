@@ -24,5 +24,5 @@ and restores it when scrolled back to the top.
 
 
 ## How to use
-1. Include `scroll-compact-header.css` in your page.
-2. Initialize the plugin with default or custom options.
+1. Include `scroll-compact-header.css` and `scroll-compact-header.js` in your page.
+2. Initialize the plugin, optionally customizing the header's `id`, and the CSS class toggled on scroll.

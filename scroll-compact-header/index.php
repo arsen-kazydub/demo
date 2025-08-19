@@ -1,8 +1,9 @@
 <?php
 
 $page = [
-  'title' => 'Scroll Compact Header',
-  'styles' => ['css/scroll-compact-header.css'],
+  'title'   => 'Scroll Compact Header',
+  'styles'  => ['css/scroll-compact-header.css'],
+  'scripts' => ['js/scroll-compact-header.js'],
 ];
 
 require_once __DIR__ . '/../_shared/header.php';
@@ -77,21 +78,5 @@ require_once __DIR__ . '/../_shared/header.php';
     Vestibulum ante ipsum primis in faucibus orci luctus et posuere cubilia curae; Vivamus ornare
     lectus at eros venenatis, tincidunt placerat nunc tempor.</p>
 </main>
-
-
-<script>
-  // Initialization
-  document.addEventListener('DOMContentLoaded', () => {
-
-    window.addEventListener('scroll', (() => {
-      const header = document.getElementById('header');
-      if (!header) return;
-      return () => {
-        header.classList.toggle('header-compact', window.scrollY > 0);
-      }
-    })());
-
-  });
-</script>
 
 <?php require_once __DIR__ . '/../_shared/footer.php';
