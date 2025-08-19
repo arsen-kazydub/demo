@@ -31,7 +31,7 @@ Each input field is paired with a slider for fast and intuitive data entry.
 ## How to use
 1. Add the calculator form to your page: `<div id="mortgage-calculator">…</div>`.
 2. Include `mortgage-calculator.css` and `mortgage-calculator.js` in your page.
-3. Initialize the calculator with your options.
+3. Initialize the plugin with default or custom options.
 
 
 ## Options
