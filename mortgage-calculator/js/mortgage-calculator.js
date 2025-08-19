@@ -18,6 +18,7 @@
  * Creates a new MortgageCalculator instance
  * @param {HTMLElement} root - The root container element
  * @param {MortgageCalculatorOptions} [options] - Custom configuration options
+ * @throws {Error} If any required elements are not found
  */
 class MortgageCalculator {
   constructor(root, options = {}) {
@@ -81,8 +82,7 @@ class MortgageCalculator {
     ];
 
     if (requiredElements.some(el => !el)) {
-      console.error(`${this.constructor.name}: Missing required elements.`);
-      return;
+      throw new Error(`${this.constructor.name}: Missing required elements.`);
     }
 
     // group inputs and sliders for easier event handling
