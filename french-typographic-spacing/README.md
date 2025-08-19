@@ -22,7 +22,7 @@ following French typographic rules.
 
 ## How to use
 1. Include `french-typographic-spacing.js` in your page.
-2. Initialize the plugin with your options.
+2. Initialize the plugin with default or custom options.
 
 
 ## Options
