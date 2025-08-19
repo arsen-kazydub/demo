@@ -1,10 +1,10 @@
 <?php
 
 $page = [
-  'title' => 'Mortgage Calculator',
+  'title'      => 'Mortgage Calculator',
   'body_class' => 'centered-content',
-  'styles' => ['css/mortgage-calculator.css'],
-  'scripts' => ['js/mortgage-calculator.js'],
+  'styles'     => ['css/mortgage-calculator.css'],
+  'scripts'    => ['js/mortgage-calculator.js', 'js/demo.js'],
 ];
 
 require_once __DIR__ . '/../_shared/header.php';
@@ -91,19 +91,5 @@ require_once __DIR__ . '/../_shared/header.php';
     </div><!-- / .mc-result -->
   </div><!-- / #mortgage-calculator -->
 </main>
-
-
-<script>
-  // Initialization
-  document.addEventListener('DOMContentLoaded', () => {
-    const root = document.getElementById('mortgage-calculator');
-    if (!root) return;
-
-    new MortgageCalculator(root, {
-      price: 500000,
-      maxPrice: 1000000,
-    });
-  });
-</script>
 
 <?php require_once __DIR__ . '/../_shared/footer.php';
