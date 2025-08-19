@@ -1,9 +1,9 @@
 <?php
 
 $page = [
-  'title' => 'Multi-Select Date Picker',
+  'title'      => 'Multi-Select Date Picker',
   'body_class' => 'centered-content',
-  'scripts' => ['js/multi-select-date-picker.js', 'js/demo.js'],
+  'scripts'    => ['js/multi-select-date-picker.js', 'js/demo.js'],
 ];
 
 require_once __DIR__ . '/../_shared/header.php';
