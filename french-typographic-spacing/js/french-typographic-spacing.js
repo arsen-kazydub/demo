@@ -1,9 +1,9 @@
 /**
  * @typedef {Object} FrenchTypographicSpacingOptions
  * @property {'none'|'narrow'|'regular'} nbspType - Type of non-breaking space to insert
- *  - `'none'`: Do not insert any non-breaking spaces and remove existing ones
- *  - `'narrow'`: Insert narrow non-breaking spaces
- *  - `'regular'`: Insert regular non-breaking spaces
+ *  - `'none'`    : Do not insert any non-breaking spaces and remove existing ones
+ *  - `'narrow'`  : Insert narrow non-breaking spaces
+ *  - `'regular'` : Insert regular non-breaking spaces
  * @property {string} insertBeforeChars - Characters before which a non-breaking space should be inserted
  * @property {string[]} skipTags - HTML tags to skip when processing
  */
@@ -19,16 +19,16 @@ class FrenchTypographicSpacing {
     if (!this.root || !this.root.childNodes) return;
 
     this.options = {
-      nbspType: 'regular',
-      insertBeforeChars: '?!:;%',
-      skipTags: ['STYLE', 'SCRIPT', 'NOSCRIPT', 'IFRAME', 'INPUT', 'TEXTAREA'],
+      nbspType          : 'regular',
+      insertBeforeChars : '?!:;%',
+      skipTags          : ['STYLE', 'SCRIPT', 'NOSCRIPT', 'IFRAME', 'INPUT', 'TEXTAREA'],
       ...options
     };
 
     this.nbspChars = {
-      'none': '',
-      'narrow': '\u202F',
-      'regular': '\u00A0',
+      'none'    : '',
+      'narrow'  : '\u202F',
+      'regular' : '\u00A0',
     }
 
     this.nbspChar = this.nbspChars[this.options.nbspType];

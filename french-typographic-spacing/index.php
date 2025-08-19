@@ -1,10 +1,10 @@
 <?php
 
 $page = [
-  'title' => 'French Typographic Spacing',
+  'title'      => 'French Typographic Spacing',
   'body_class' => 'centered-content',
-  'styles' => ['css/french-typographic-spacing.css'],
-  'scripts' => ['js/french-typographic-spacing.js'],
+  'styles'     => ['css/demo.css'],
+  'scripts'    => ['js/french-typographic-spacing.js', 'js/demo.js'],
 ];
 
 require_once __DIR__ . '/../_shared/header.php';
@@ -43,29 +43,5 @@ require_once __DIR__ . '/../_shared/header.php';
     </div>
   </div>
 </main>
-
-
-<script>
-  // Initialization
-  document.addEventListener('DOMContentLoaded', () => {
-    // example of a French page detection
-    // if (document.documentElement.lang === 'fr-FR' || location.pathname.includes('/fr/')) {}
-
-    const select = document.getElementById('nbsp-type');
-    if (!select) return;
-
-    // we can process the whole page or specific elements like in this demo
-    const frenchText = document.querySelectorAll('.poem');
-    if (!frenchText.length) return;
-
-    select.addEventListener('change', () => {
-      frenchText.forEach(container => {
-        new FrenchTypographicSpacing(container, {
-          nbspType: select.value
-        });
-      });
-    });
-  });
-</script>
 
 <?php require_once __DIR__ . '/../_shared/footer.php';
