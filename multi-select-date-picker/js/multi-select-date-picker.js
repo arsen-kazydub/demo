@@ -9,7 +9,7 @@
  * Creates a new MultiSelectDatePicker instance
  * @param {HTMLElement} root - The root container holding the year, month, and day selects
  * @param {MultiSelectDatePickerOptions} [options] - Custom configuration options
- * @throws {Error} Throws an error if any required select elements are not found
+ * @throws {Error} If any required elements are not found
  */
 class MultiSelectDatePicker {
   constructor(root, options = {}) {
