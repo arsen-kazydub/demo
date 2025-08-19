@@ -42,3 +42,7 @@ h1 {
   margin-bottom: var(--spacing);
   text-align: center;
 }
+
+option:disabled {
+  color: #a8a29e;
+}
