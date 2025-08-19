@@ -13,6 +13,7 @@
  * Creates a new ToggleText instance
  * @param {HTMLElement} root - The root container element
  * @param {ToggleTextOptions} [options] - Custom configuration options
+ * @throws {Error} If required elements (content or button) are missing inside the root
  */
 class ToggleText {
   constructor(root, options = {}) {
@@ -39,8 +40,7 @@ class ToggleText {
     this.btn     = this.root.querySelector('.' + this.options.btnClass);
 
     if (!this.content || !this.btn) {
-      console.error(`${this.constructor.name}: Missing required elements.`);
-      return;
+      throw new Error(`${this.constructor.name}: Missing required elements.`);
     }
 
     this.isOpen     = false;
@@ -53,7 +53,7 @@ class ToggleText {
 
 
   init() {
-    if (!this.createBreakPoint()) return;
+    this.createBreakPoint();
     this.setMinMaxHeight();
     this.toggleTransitions(true);
     this.toggleContent();
@@ -69,11 +69,10 @@ class ToggleText {
   createBreakPoint() {
     const anchorEl = this.content.querySelector(this.options.breakPointSelector);
     if (!anchorEl) {
-      console.error(
+      throw new Error(
         `${this.constructor.name}: ` +
-        `Could not find an element by selector "${this.options.breakPointSelector}".`
+        `Could not find an element "${this.options.breakPointSelector}" inside the content.`
       );
-      return null;
     }
 
     // insert a break point before the anchor element
