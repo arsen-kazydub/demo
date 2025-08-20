@@ -8,7 +8,7 @@ A JavaScript plugin that adds non-breaking spaces before punctuation marks,
 following French typographic rules.
 
 **Live Demo:**
-[https://work.arsen.pro/french-typographic-spacing/](https://work.arsen.pro/french-typographic-spacing/)
+[https://demo.arsen.pro/french-typographic-spacing/](https://demo.arsen.pro/french-typographic-spacing/)
 
 
 ## Features
