@@ -9,7 +9,7 @@ A JavaScript solution for selecting a date using three synchronized `select` box
 
 
 **Live Demo:**
-[https://work.arsen.pro/multi-select-date-picker/](https://work.arsen.pro/multi-select-date-picker/)
+[https://demo.arsen.pro/multi-select-date-picker/](https://demo.arsen.pro/multi-select-date-picker/)
 
 
 ## Features
