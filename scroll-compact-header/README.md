@@ -8,7 +8,7 @@ A minimal JavaScript plugin that shrinks the header height when the page is scro
 and restores it when scrolled back to the top.
 
 **Live Demo:**
-[https://work.arsen.pro/scroll-compact-header/](https://work.arsen.pro/scroll-compact-header/)
+[https://demo.arsen.pro/scroll-compact-header/](https://demo.arsen.pro/scroll-compact-header/)
 
 
 ## Features
