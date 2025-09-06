@@ -30,8 +30,8 @@ A JavaScript solution for selecting a date using three synchronized `select` box
 
 
 ## Options
-| Option          | Type     | Default         | Description                       |
-|-----------------|----------|-----------------|-----------------------------------|
-| `yearSelector`  | `string` | `'#date-year'`  | CSS selector for the year select  |
-| `monthSelector` | `string` | `'#date-month'` | CSS selector for the month select |
-| `daySelector`   | `string` | `'#date-day'`   | CSS selector for the day select   |
+| Option          | Type     | Default         | Description                      |
+|-----------------|----------|-----------------|----------------------------------|
+| `yearSelector`  | `string` | `'#date-year'`  | CSS selector of the year select  |
+| `monthSelector` | `string` | `'#date-month'` | CSS selector of the month select |
+| `daySelector`   | `string` | `'#date-day'`   | CSS selector of the day select   |
