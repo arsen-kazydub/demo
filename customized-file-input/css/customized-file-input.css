@@ -1,0 +1,82 @@
+.customized-file-input {
+  --height: 38px;
+  --font-size: 14px;
+  --border-width: 1px;
+  --border-color: #dee2e6;
+  --border-radius: 6px;
+  --btn-width: 80px;
+  --btn-margin: 3px;
+  --btn-bg-hover: #e9ecef;
+  --transition-duration: 0.4s;
+
+  position: relative;
+  height: var(--height);
+  color: #333;
+  font-size: var(--font-size);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: white;
+
+  &, * {
+    box-sizing: border-box;
+    transition:
+      border-color var(--transition-duration),
+      background var(--transition-duration),
+      box-shadow var(--transition-duration);
+  }
+
+  /* real input is transparent and covers the whole area */
+  input[type="file"] {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .customized-file-input__fake-input,
+  .customized-file-input__fake-btn {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+  }
+
+  .customized-file-input__fake-input {
+    left: 0;
+    width: calc(100% - var(--btn-width) - (var(--btn-margin) * 2));
+    height: var(--height);
+    line-height: var(--height);
+    padding: 0 .75rem;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .customized-file-input__fake-btn {
+    top: var(--btn-margin);
+    right: var(--btn-margin);
+    bottom: var(--btn-margin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--btn-width);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: calc(var(--border-radius) / 2);
+    background: #f8f9fa;
+  }
+
+  &:hover {
+    .customized-file-input__fake-btn {
+      background: var(--btn-bg-hover);
+    }
+  }
+
+  &:focus-within {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 .15rem rgba(13, 110, 253, .25);
+    .customized-file-input__fake-btn {
+      background: var(--btn-bg-hover);
+    }
+  }
+}
