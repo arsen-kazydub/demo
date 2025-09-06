@@ -16,7 +16,6 @@ class CustomizedFileInput {
     this.fileInput = fileInput;
     if (!this.fileInput) return;
 
-    // CSS classes, that are used in customized inputs
     this.options = {
       wrapperClass   : 'customized-file-input',
       fakeInputClass : 'customized-file-input__fake-input',
