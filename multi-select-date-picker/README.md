@@ -4,7 +4,7 @@
 
 
 # Multi-Select Date Picker
-A JavaScript solution for selecting a date using three synchronized `select` boxes
+A plain JavaScript plugin for selecting a date using three synchronized `select` boxes
 (year, month, day). Prevents selecting invalid dates.
 
 
@@ -13,9 +13,10 @@ A JavaScript solution for selecting a date using three synchronized `select` box
 
 
 ## Features
-* Keyboard accessible
-* Lightweight
 * Customizable
+* Keyboard accessible
+* Dependency-free
+* Lightweight
 
 
 ## Technologies
