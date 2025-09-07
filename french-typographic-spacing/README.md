@@ -4,7 +4,7 @@
 
 
 # French Typographic Spacing
-A JavaScript plugin that adds non-breaking spaces before punctuation marks,
+A plain JavaScript plugin that adds non-breaking spaces before punctuation marks,
 following French typographic rules.
 
 **Live Demo:**
@@ -12,8 +12,9 @@ following French typographic rules.
 
 
 ## Features
-* Lightweight
 * Customizable
+* Dependency-free
+* Lightweight
 
 
 ## Technologies
