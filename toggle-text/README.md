@@ -4,7 +4,7 @@
 
 
 # Toggle Text
-A JavaScript plugin creating collapsible text sections,
+A plain JavaScript plugin that creates collapsible text sections,
 offering configurable break points and smooth height transitions.
 
 
@@ -14,11 +14,12 @@ offering configurable break points and smooth height transitions.
 
 ## Features
 * Smooth height transitions
+* Customizable
 * Keyboard accessible
 * Responsive layout
 * Semantic markup
+* Dependency-free
 * Lightweight
-* Customizable
 * Translatable
 
 
