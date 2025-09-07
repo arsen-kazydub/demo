@@ -4,7 +4,7 @@
 
 
 # Customized File Input
-A small JavaScript plugin that enhances the default file input with decorative elements,
+A plain JavaScript plugin that enhances the default file input with decorative elements,
 allowing to achieve any visual appearance while maintaining full functionality.
 
 
@@ -18,6 +18,7 @@ allowing to achieve any visual appearance while maintaining full functionality.
 * Keyboard accessible
 * Responsive layout
 * Semantic markup
+* Dependency-free
 * Lightweight
 * Translatable
 
