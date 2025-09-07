@@ -45,8 +45,9 @@ class CustomizedFileInput {
 
 
   wrapRealInput() {
-    this.wrapperEl = document.createElement('div');
-    this.wrapperEl.className = this.options.wrapperClass;
+    this.wrapperEl = Object.assign(document.createElement('div'), {
+      className: this.options.wrapperClass
+    });
     this.fileInput.parentNode.insertBefore(this.wrapperEl, this.fileInput);
     this.wrapperEl.append(this.fileInput);
   }
