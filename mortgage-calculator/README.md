@@ -4,7 +4,7 @@
 
 
 # Mortgage Calculator
-A JavaScript plugin calculating monthly and total mortgage payments.
+A plain JavaScript plugin that calculates monthly and total mortgage payments.
 Each input field is paired with a slider for fast and intuitive data entry.
 
 **Live Demo:**
@@ -13,11 +13,12 @@ Each input field is paired with a slider for fast and intuitive data entry.
 
 ## Features
 * Slider controls for inputs
+* Customizable
 * Keyboard accessible
 * Responsive layout
 * Semantic markup
+* Dependency-free
 * Lightweight
-* Customizable
 * Translatable
 
 
