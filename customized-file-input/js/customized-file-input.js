@@ -33,7 +33,7 @@ class CustomizedFileInput {
 
   init() {
     if (this.isCustomized()) return;
-    this.wrapRealInput();
+    this.createWrapper();
     this.createFakeInput();
     this.fileInput.addEventListener('change', () => this.changeHandler());
   }
@@ -44,7 +44,7 @@ class CustomizedFileInput {
   }
 
 
-  wrapRealInput() {
+  createWrapper() {
     this.wrapperEl = Object.assign(document.createElement('div'), {
       className: this.options.wrapperClass
     });
