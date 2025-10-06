@@ -1,11 +1,14 @@
 /**
  * @typedef {Object} FrenchTypographicSpacingOptions
- * @property {'none'|'narrow'|'regular'} nbspType - Type of non-breaking space to insert
- *  - `'none'`    : Do not insert any non-breaking spaces and remove existing ones
- *  - `'narrow'`  : Insert narrow non-breaking spaces
- *  - `'regular'` : Insert regular non-breaking spaces
- * @property {string} insertBeforeChars - Characters before which a non-breaking space should be inserted
- * @property {string[]} skipTags - HTML tags to skip when processing
+ * @property {'none'|'narrow'|'regular'} [nbspType = 'regular']
+ * - Type of non-breaking space to insert
+ *   - 'none'    : Do not insert any non-breaking spaces and remove existing ones
+ *   - 'narrow'  : Insert narrow non-breaking spaces
+ *   - 'regular' : Insert regular non-breaking spaces
+ * @property {string} [insertBeforeChars = '?!:;%']
+ * - Characters before which a non-breaking space should be inserted
+ * @property {string[]} [skipTags = ['STYLE', 'SCRIPT', 'NOSCRIPT', 'IFRAME', 'INPUT', 'TEXTAREA']]
+ * - HTML tags to skip when processing
  */
 
 /**
