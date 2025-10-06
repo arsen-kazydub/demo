@@ -1,14 +1,18 @@
 /**
  * @typedef {Object} CustomizedFileInputOptions
- * @property {string} wrapperClass   - CSS class of the wrapper element containing the file input and decorative elements
- * @property {string} fakeInputClass - CSS class of the fake input where the selected file name is displayed
- * @property {string} fakeBtnClass   - CSS class of the fake button
- * @property {string} fakeBtnText    - Text displayed inside the fake button
+ * @property {string} [wrapperClass = 'customized-file-input']
+ * - CSS class for the wrapper element containing the file input and decorative elements
+ * @property {string} [fakeInputClass = 'customized-file-input__fake-input']
+ * - CSS class for the fake input where the selected file name is displayed
+ * @property {string} [fakeBtnClass = 'customized-file-input__fake-btn']
+ * - CSS class for the fake button
+ * @property {string} [fakeBtnText = 'Browse']
+ * - Text displayed inside the fake button
  */
 
 /**
  * Creates a new CustomizedFileInput instance
- * @param {HTMLInputElement} fileInput - The target file input element
+ * @param {HTMLInputElement} fileInput - The native <input type="file"> element
  * @param {CustomizedFileInputOptions} [options] - Custom configuration options
  */
 class CustomizedFileInput {
