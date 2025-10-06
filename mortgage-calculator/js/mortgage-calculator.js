@@ -1,17 +1,17 @@
 /**
  * @typedef {Object} MortgageCalculatorOptions
- * @property {number} price           - Initial property price (USD)
- * @property {number} downPayment     - Initial down payment (%)
- * @property {number} loanPeriod      - Initial loan period (years)
- * @property {number} interestRate    - Initial interest rate (%)
- * @property {number} minPrice        - Minimum allowed price (USD)
- * @property {number} maxPrice        - Maximum allowed price (USD)
- * @property {number} minDownPayment  - Minimum allowed down payment (%)
- * @property {number} maxDownPayment  - Maximum allowed down payment (%)
- * @property {number} minLoanPeriod   - Minimum loan period (years)
- * @property {number} maxLoanPeriod   - Maximum loan period (years)
- * @property {number} minInterestRate - Minimum interest rate (%)
- * @property {number} maxInterestRate - Maximum interest rate (%)
+ * @property {number} [price = 1000000]      - Initial property price (USD)
+ * @property {number} [downPayment = 20]     - Initial down payment (%)
+ * @property {number} [loanPeriod = 25]      - Initial loan period (years)
+ * @property {number} [interestRate = 4]     - Initial interest rate (%)
+ * @property {number} [minPrice = 10000]     - Minimum allowed price (USD)
+ * @property {number} [maxPrice = 2000000]   - Maximum allowed price (USD)
+ * @property {number} [minDownPayment = 10]  - Minimum allowed down payment (%)
+ * @property {number} [maxDownPayment = 80]  - Maximum allowed down payment (%)
+ * @property {number} [minLoanPeriod = 1]    - Minimum loan period (years)
+ * @property {number} [maxLoanPeriod = 30]   - Maximum loan period (years)
+ * @property {number} [minInterestRate = 1]  - Minimum interest rate (%)
+ * @property {number} [maxInterestRate = 10] - Maximum interest rate (%)
  */
 
 /**
