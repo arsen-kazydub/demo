@@ -35,9 +35,9 @@ allowing to achieve any visual appearance while maintaining full functionality.
 
 
 ## Options
-| Option           | Type     | Default                               | Description                                                                |
-|------------------|----------|---------------------------------------|----------------------------------------------------------------------------|
-| `wrapperClass`   | `string` | `'customized-file-input'`             | CSS class of the wrapper element containing the file input and decorations |
-| `fakeInputClass` | `string` | `'customized-file-input__fake-input'` | CSS class of the fake input where the selected file name is displayed      |
-| `fakeBtnClass`   | `string` | `'customized-file-input__fake-btn'`   | CSS class of the fake button                                               |
-| `fakeBtnText`    | `string` | `'Browse'`                            | Text displayed inside the fake button                                      |
+| Option           | Type     | Default                               | Description                                                                 |
+|------------------|----------|---------------------------------------|-----------------------------------------------------------------------------|
+| `wrapperClass`   | `string` | `'customized-file-input'`             | CSS class for the wrapper element containing the file input and decorations |
+| `fakeInputClass` | `string` | `'customized-file-input__fake-input'` | CSS class for the fake input where the selected file name is displayed      |
+| `fakeBtnClass`   | `string` | `'customized-file-input__fake-btn'`   | CSS class for the fake button                                               |
+| `fakeBtnText`    | `string` | `'Browse'`                            | Text displayed inside the fake button                                       |
