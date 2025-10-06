@@ -1,0 +1,169 @@
+.customized-select {
+  --height: 38px;
+  --option-height: 30px;
+  --arrow-width: 18px;
+  --border-width: 2px;
+  --border-radius: 6px;
+  --border-color-default: #dee2e6;
+  --border-color-hover: #bfc4c9;
+  --border-color-selected: #6a8df0;
+  --box-shadow-focused: 0 0 0 .15rem rgba(13, 110, 253, .25);
+  --option-bg-hover: #eaf0fb;
+  --option-bg-selected: #dbe4fc;
+  --text-padding: 12px;
+  --text-color: #333;
+  --bg-color: white;
+  --transition-duration: 0.2s;
+
+  --inner-height: calc(var(--height) - (2 * var(--border-width)));
+
+  position: relative;
+  max-width: 100%;
+  height: var(--height);
+  user-select: none;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  select {
+    position: absolute;
+    z-index: 0;
+    left: -9999px;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  .customized-select__ui-value,
+  .customized-select__ui-options li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .customized-select__ui {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    height: var(--height);
+    border: var(--border-width) solid var(--border-color-default);
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    background: var(--bg-color);
+    cursor: default;
+    transition:
+      height var(--transition-duration),
+      border-color var(--transition-duration),
+      box-shadow var(--transition-duration);
+
+    .customized-select__ui-value {
+      position: relative;
+      z-index: 1;
+      margin-right: var(--arrow-width);
+      line-height: var(--inner-height);
+      padding: 0 var(--text-padding);
+    }
+
+    .customized-select__ui-arrow {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: 0;
+      width: var(--arrow-width);
+      height: var(--inner-height);
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 14px;
+        border-top-left-radius: var(--border-radius);
+        border-bottom-left-radius: var(--border-radius);
+        background: var(--border-color-default);
+        transition: background var(--transition-duration);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-65%) rotate(45deg);
+        padding: 2px;
+        border: solid var(--text-color);
+        border-width: 0 2px 2px 0;
+      }
+    }
+
+    .customized-select__ui-options {
+      display: none;
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      right: 0;
+      top: var(--inner-height);
+      overflow: hidden;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background: var(--bg-color);
+      transition: height var(--transition-duration);
+      /* helper class for measuring width and height of the options list */
+      &.u-calc-dimensions {
+        display: block;
+        right: auto;
+        height: auto;
+      }
+      .customized-select__ui-option {
+        height: var(--option-height);
+        line-height: var(--option-height);
+        padding: 0 var(--text-padding);
+        &:hover {
+          background: var(--option-bg-hover);
+        }
+        &.customized-select__ui-option--selected {
+          background: var(--option-bg-selected);
+        }
+      }
+    }
+  }
+
+  /* hover state */
+  &:hover {
+    .customized-select__ui {
+      border-color: var(--border-color-hover);
+    }
+    .customized-select__ui-arrow::before {
+      background: var(--border-color-hover);
+    }
+  }
+
+  /* focus state */
+  select:focus {
+    & + .customized-select__ui {
+      border-color: var(--border-color-selected);
+      box-shadow: var(--box-shadow-focused);
+    }
+    & + .customized-select__ui .customized-select__ui-arrow::before {
+      background: var(--border-color-selected);
+    }
+  }
+
+  /* selected (open) state */
+  &.customized-select--selected {
+    .customized-select__ui {
+      border-color: var(--border-color-selected);
+      box-shadow: var(--box-shadow-focused);
+    }
+    .customized-select__ui-arrow::before {
+      background: var(--border-color-selected);
+    }
+  }
+}
