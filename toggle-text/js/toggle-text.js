@@ -1,12 +1,19 @@
 /**
  * @typedef {Object} ToggleTextOptions
- * @property {string} breakPointSelector - CSS selector for the element before which a break point will be inserted
- * @property {string} contentClass       - CSS class for the content container
- * @property {string} breakPointClass    - CSS class for the inserted break point element
- * @property {string} btnClass           - CSS class for the toggle button
- * @property {string} btnTextExpand      - Button text when content is collapsed
- * @property {string} btnTextCollapse    - Button text when content is expanded
- * @property {number} transitionDuration - Duration of the height transition in milliseconds
+ * @property {string} [breakPointSelector = 'p:nth-child(2)']
+ * - CSS selector for the element before which a break point will be inserted
+ * @property {string} [contentClass = 'toggle-text__content']
+ * - CSS class for the content container
+ * @property {string} [breakPointClass = 'toggle-text__break-point']
+ * - CSS class for the inserted break point element
+ * @property {string} [btnClass = 'toggle-text__btn']
+ * - CSS class for the toggle button
+ * @property {string} [btnTextExpand = 'Read More']
+ * - Button text when content is collapsed
+ * @property {string} [btnTextCollapse = 'Read Less']
+ * - Button text when content is expanded
+ * @property {number} [transitionDuration = 400]
+ * - Duration of the height transition in milliseconds
  */
 
 /**
