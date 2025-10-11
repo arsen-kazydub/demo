@@ -1,12 +1,14 @@
 <?php
 
+$shared = __DIR__ . '/../../_shared';
+
 $page = [
   'title'   => 'Scroll Compact Header',
   'styles'  => ['css/scroll-compact-header.css'],
   'scripts' => ['js/scroll-compact-header.js'],
 ];
 
-require_once __DIR__ . '/../_shared/header.php';
+require_once $shared . '/header.php';
 
 ?>
 
@@ -79,4 +81,4 @@ require_once __DIR__ . '/../_shared/header.php';
     lectus at eros venenatis, tincidunt placerat nunc tempor.</p>
 </main>
 
-<?php require_once __DIR__ . '/../_shared/footer.php';
+<?php require_once $shared . '/footer.php';
