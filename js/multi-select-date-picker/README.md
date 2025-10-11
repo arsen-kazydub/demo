@@ -9,7 +9,7 @@ A plain JavaScript plugin for selecting a date using three synchronized `select`
 
 
 **Live Demo:**
-[https://demo.arsen.pro/multi-select-date-picker/](https://demo.arsen.pro/multi-select-date-picker/)
+[https://demo.arsen.pro/js/multi-select-date-picker/](https://demo.arsen.pro/js/multi-select-date-picker/)
 
 
 ## Features

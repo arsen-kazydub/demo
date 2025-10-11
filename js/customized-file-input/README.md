@@ -9,7 +9,7 @@ allowing to achieve any visual appearance while maintaining full functionality.
 
 
 **Live Demo:**
-[https://demo.arsen.pro/customized-file-input/](https://demo.arsen.pro/customized-file-input/)
+[https://demo.arsen.pro/js/customized-file-input/](https://demo.arsen.pro/js/customized-file-input/)
 
 
 ## Features

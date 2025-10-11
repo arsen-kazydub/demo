@@ -9,7 +9,7 @@ fully functional and supporting both mouse and keyboard interactions.
 
 
 **Live Demo:**
-[https://demo.arsen.pro/customized-select/](https://demo.arsen.pro/customized-select/)
+[https://demo.arsen.pro/js/customized-select/](https://demo.arsen.pro/js/customized-select/)
 
 
 ## Features

@@ -8,7 +8,7 @@ A plain JavaScript plugin that calculates monthly and total mortgage payments.
 Each input field is paired with a slider for fast and intuitive data entry.
 
 **Live Demo:**
-[https://demo.arsen.pro/mortgage-calculator/](https://demo.arsen.pro/mortgage-calculator/)
+[https://demo.arsen.pro/js/mortgage-calculator/](https://demo.arsen.pro/js/mortgage-calculator/)
 
 
 ## Features

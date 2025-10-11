@@ -9,7 +9,7 @@ offering configurable break points and smooth height transitions.
 
 
 **Live Demo:**
-[https://demo.arsen.pro/toggle-text/](https://demo.arsen.pro/toggle-text/)
+[https://demo.arsen.pro/js/toggle-text/](https://demo.arsen.pro/js/toggle-text/)
 
 
 ## Features
