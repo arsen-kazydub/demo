@@ -1,5 +1,7 @@
 <?php
 
+$shared = __DIR__ . '/../../_shared';
+
 $page = [
   'title'      => 'French Typographic Spacing',
   'body_class' => 'centered-content',
@@ -7,7 +9,7 @@ $page = [
   'scripts'    => ['js/french-typographic-spacing.js', 'js/demo.js'],
 ];
 
-require_once __DIR__ . '/../_shared/header.php';
+require_once $shared . '/header.php';
 
 ?>
 
@@ -44,4 +46,4 @@ require_once __DIR__ . '/../_shared/header.php';
   </div>
 </main>
 
-<?php require_once __DIR__ . '/../_shared/footer.php';
+<?php require_once $shared . '/footer.php';
