@@ -1,5 +1,5 @@
 <kbd>
-    <img src="img/customized-file-input.png" alt="Customized File Input">
+    <img src="screenshots/customized-file-input.png" alt="Customized File Input">
 </kbd>
 
 
