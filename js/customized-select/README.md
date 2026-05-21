@@ -1,11 +1,12 @@
-<kbd>
-    <img src="img/customized-select.png" alt="Customized Select">
-</kbd>
-
-
 # Customized Select
+
 A plain JavaScript plugin that creates a custom dropdown UI while keeping the native `<select>`
 fully functional and supporting both mouse and keyboard interactions.
+
+
+<kbd>
+  <img src="screenshots/customized-select.png" alt="Customized Select">
+</kbd>
 
 
 **Live Demo:**
@@ -13,6 +14,7 @@ fully functional and supporting both mouse and keyboard interactions.
 
 
 ## Features
+
 * Native `<select>` remains functional
 * UI synchronized with native `<select>`
 * Width: any CSS unit or auto-calculated
@@ -28,17 +30,20 @@ fully functional and supporting both mouse and keyboard interactions.
 
 
 ## Technologies
+
 * JavaScript (ES6+)
 * HTML5
 * CSS3
 
 
 ## How to use
+
 1. Include `customized-select.css` and `customized-select.js` in your page.
 2. Initialize the plugin with default or custom options.
 
 
 ## Options
+
 | Option                  | Type                   | Default                                    | Description                                                                             |
 |-------------------------|------------------------|--------------------------------------------|-----------------------------------------------------------------------------------------|
 | `width`                 | `string\|number\|null` | `null`                                     | Custom width of the ui-select; accepts any valid CSS width; if null, auto-calculated    |
