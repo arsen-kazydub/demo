@@ -8,6 +8,7 @@ fully functional and supporting both mouse and keyboard interactions.
   <img src="screenshots/customized-select.png" alt="Customized Select">
 </kbd>
 
+<div>&nbsp;</div>
 
 **Live Demo:**
 [https://demo.arsen.pro/js/customized-select/](https://demo.arsen.pro/js/customized-select/)
