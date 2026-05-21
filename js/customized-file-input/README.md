@@ -1,18 +1,21 @@
-<kbd>
-    <img src="screenshots/customized-file-input.png" alt="Customized File Input">
-</kbd>
-
-
 # Customized File Input
+
 A plain JavaScript plugin that enhances the native `<input type="file">` with decorative elements,
 allowing to achieve any visual appearance while maintaining full functionality.
 
+
+<kbd>
+  <img src="screenshots/customized-file-input.png" alt="Customized File Input">
+</kbd>
+
+<div>&nbsp;</div>
 
 **Live Demo:**
 [https://demo.arsen.pro/js/customized-file-input/](https://demo.arsen.pro/js/customized-file-input/)
 
 
 ## Features
+
 * Fully customizable fake input and browse button
 * Handles long file names gracefully with ellipsis
 * Keyboard accessible
@@ -24,17 +27,20 @@ allowing to achieve any visual appearance while maintaining full functionality.
 
 
 ## Technologies
+
 * JavaScript (ES6+)
 * HTML5
 * CSS3
 
 
 ## How to use
+
 1. Include `customized-file-input.css` and `customized-file-input.js` in your page.
 2. Initialize the plugin with default or custom options.
 
 
 ## Options
+
 | Option           | Type     | Default                               | Description                                                                 |
 |------------------|----------|---------------------------------------|-----------------------------------------------------------------------------|
 | `wrapperClass`   | `string` | `'customized-file-input'`             | CSS class for the wrapper element containing the file input and decorations |
