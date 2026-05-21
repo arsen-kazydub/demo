@@ -1,18 +1,21 @@
-<kbd>
-    <img src="img/toggle-text.png" alt="Toggle Text">
-</kbd>
-
-
 # Toggle Text
+
 A plain JavaScript plugin that creates collapsible text sections,
 offering configurable break points and smooth height transitions.
 
+
+<kbd>
+  <img src="screenshots/toggle-text.png" alt="Toggle Text">
+</kbd>
+
+<div>&nbsp;</div>
 
 **Live Demo:**
 [https://demo.arsen.pro/js/toggle-text/](https://demo.arsen.pro/js/toggle-text/)
 
 
 ## Features
+
 * Smooth height transitions
 * Customizable
 * Keyboard accessible
@@ -24,17 +27,20 @@ offering configurable break points and smooth height transitions.
 
 
 ## Technologies
+
 * JavaScript (ES6+)
 * HTML5
 * CSS3
 
 
 ## How to use
+
 1. Prepare your HTML markup as in the example below.
 2. Include `toggle-text.css` and `toggle-text.js` in your page.
 3. Initialize the plugin with default or custom options.
 
 **Example:**
+
 ```html
 <div class="toggle-text">
   <div class="toggle-text__content">
@@ -46,6 +52,7 @@ offering configurable break points and smooth height transitions.
 
 
 ## Options
+
 | Option               | Type     | Default                      | Description                                                              |
 |----------------------|----------|------------------------------|--------------------------------------------------------------------------|
 | `breakPointSelector` | `string` | `'p:nth-child(2)'`           | CSS selector for the element before which a break point will be inserted |
