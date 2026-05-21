@@ -1,17 +1,21 @@
-<kbd>
-    <img src="img/mortgage-calculator.png" alt="Mortgage Calculator">
-</kbd>
-
-
 # Mortgage Calculator
+
 A plain JavaScript plugin that calculates monthly and total mortgage payments.
 Each input field is paired with a slider for fast and intuitive data entry.
+
+
+<kbd>
+  <img src="screenshots/mortgage-calculator.png" alt="Mortgage Calculator">
+</kbd>
+
+<div>&nbsp;</div>
 
 **Live Demo:**
 [https://demo.arsen.pro/js/mortgage-calculator/](https://demo.arsen.pro/js/mortgage-calculator/)
 
 
 ## Features
+
 * Slider controls for inputs
 * Customizable
 * Keyboard accessible
@@ -23,6 +27,7 @@ Each input field is paired with a slider for fast and intuitive data entry.
 
 
 ## Technologies
+
 * JavaScript (ES6+)
 * HTML5
 * CSS3
@@ -30,12 +35,14 @@ Each input field is paired with a slider for fast and intuitive data entry.
 
 
 ## How to use
+
 1. Add the calculator form to your page: `<div id="mortgage-calculator">…</div>`.
 2. Include `mortgage-calculator.css` and `mortgage-calculator.js` in your page.
 3. Initialize the plugin with default or custom options.
 
 
 ## Options
+
 | Option            | Type     | Default   | Description                      |
 |-------------------|----------|-----------|----------------------------------|
 | `price`           | `number` | `1000000` | Initial property price (USD)     |
