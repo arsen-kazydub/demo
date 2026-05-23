@@ -4,6 +4,8 @@ A plain JavaScript plugin that calculates monthly and total mortgage payments.
 Each input field is paired with a slider for fast and intuitive data entry.
 
 
+## Preview
+
 <kbd>
   <img src="screenshots/mortgage-calculator.png" alt="Mortgage Calculator">
 </kbd>
