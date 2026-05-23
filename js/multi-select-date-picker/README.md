@@ -4,6 +4,8 @@ A plain JavaScript plugin for selecting a date using three synchronized `select`
 (year, month, day). Prevents selecting invalid dates.
 
 
+## Preview
+
 <kbd>
   <img src="screenshots/multi-select-date-picker.png" alt="Multi-Select Date Picker">
 </kbd>
