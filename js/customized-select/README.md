@@ -4,6 +4,8 @@ A plain JavaScript plugin that creates a custom dropdown UI while keeping the na
 fully functional and supporting both mouse and keyboard interactions.
 
 
+## Preview
+
 <kbd>
   <img src="screenshots/customized-select.png" alt="Customized Select">
 </kbd>
