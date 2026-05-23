@@ -4,6 +4,8 @@ A plain JavaScript plugin that adds non-breaking spaces before punctuation marks
 following French typographic rules.
 
 
+## Preview
+
 <kbd>
   <img src="screenshots/french-typographic-spacing.png" alt="French Typographic Spacing">
 </kbd>
