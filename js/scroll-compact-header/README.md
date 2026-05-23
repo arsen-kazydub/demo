@@ -4,6 +4,8 @@ A minimal plain JavaScript plugin that shrinks the header height when the page i
 and restores it when scrolled back to the top.
 
 
+## Preview
+
 <kbd>
   <img src="screenshots/scroll-compact-header.png" alt="Scroll Compact Header">
 </kbd>
