@@ -4,6 +4,8 @@ A plain JavaScript plugin that enhances the native `<input type="file">` with de
 allowing to achieve any visual appearance while maintaining full functionality.
 
 
+## Preview
+
 <kbd>
   <img src="screenshots/customized-file-input.png" alt="Customized File Input">
 </kbd>
