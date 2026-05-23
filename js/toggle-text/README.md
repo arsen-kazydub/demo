@@ -4,6 +4,8 @@ A plain JavaScript plugin that creates collapsible text sections,
 offering configurable break points and smooth height transitions.
 
 
+## Preview
+
 <kbd>
   <img src="screenshots/toggle-text.png" alt="Toggle Text">
 </kbd>
